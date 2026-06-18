@@ -73,3 +73,26 @@ public:
     }
 };
 
+3]MAX SUM SUBARRAY OF SIZE K -GFG
+OPTIMAL APPROACH
+class Solution {
+  public:
+    int maxSubarraySum(vector<int>& arr, int k) {
+        // code here
+        int n = arr.size();
+        int sum = 0;
+        int maxsum = INT_MIN;
+        for(int i= 0;i<k;i++){
+            sum=sum+arr[i];
+            maxsum=max(sum,maxsum);
+        }
+        for(int i=k;i<n;i++){
+            sum=sum+arr[i]-arr[i-k];
+             maxsum=max(sum,maxsum);
+        }
+        
+        
+    return maxsum;
+        
+    }
+};
