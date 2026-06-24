@@ -1,5 +1,7 @@
 A Stack is a data structure that follows:
 LIFO (Last In First Out)
+Usecase : It is majorly been used when we have to do something with nearest element or adjacent element like neighbours and then using that performing operation is what stack helps in.
+
 Example:
 Push 10
 Push 20
